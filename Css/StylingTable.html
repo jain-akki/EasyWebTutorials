@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EasyWeb</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../Style/w3.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../Style/foundation.css" >
+  <script src="../js/jquery.min.js" ></script>
+  <script src="../js/foundation.min.js" ></script>
+  <script src="../js/modernizr.js" ></script>
+  <script>
+  $(document).ready(function(){
+  $(document).foundation(); 
+   });
+  </script>
+</head>
+
+<body id="myPage" style="height:1000px">
+
+<div>
+  <img src="../img/Logo.PNG" alt="EasyWeb Logo" style="height:100px;"/>
+ </div>
+
+<div class="sticky">
+  <nav class="top-bar" data-topbar data-options="is_hover: false">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="../index.html">EasyWeb</a></h1>
+    </li>
+    <!-- Collapsible Button on small screens: remove the .menu-icon class to get rid of icon. 
+    Remove the "Menu" text if you only want to show the icon -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <li><a href="../index.html">Home</a></li>
+      <li class="has-dropdown">
+        <a href="#">WebDesigning</a>
+        <ul class="dropdown">
+          <li><a href="../Html/MainHtmlPage.html">Html</a></li>
+          <li><a href="../Html5/MainHtml5Page.html">Html5</a></li>
+          <li><a href="MainCssPage.html">Css</a></li>
+          <li><a href="../Css3/MainCss3Page.html">Css3</a></li>
+          <li><a href="../Javascript/MainJavascriptPage.html">Javascript</a></li>
+          <li><a href="#">Jquery</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+</div>
+
+<div>
+  <div class="medium-2 columns" style="background-color:#f1f1f1;">
+    <ul class="side-nav">
+      <li><a href="MainCssPage.html">Home</a></li>
+      <li><a href="DefineCss.html">Define CSS</a></li>
+      <li><a href="CSS-Selectors.html">CSS Selectors</a></li>
+      <li><a href="InlineStyleSheet.html">Inline Style Sheet</a></li>
+      <li><a href="InternalStyleSheet.html">Internal Style Sheet</a></li>      <li><a href="ExternalStyleSheet.html">External Style Sheet</a></li>
+      <li><a href="ColorProperties.html">Color Properties</a></li>
+      <li><a href="FontProperties.html">Font Properties</a></li>
+      <li><a href="BackgroundProperties.html">CSS Background</a></li> 
+      <li><a href="BoxModel.html">Box Model</a></li>
+      <li><a href="OverflowProperty.html">Overflow Property</a></li>
+      <li><a href="FloatClear.html">Float and Clear</a></li>
+      <li><a href="StylingLinks.html">Styling Links</a></li>
+      <li><a href="StylingTable.html">Styling Table</a></li>    
+      <li><a href="HorizontalList.html">Horizontal List</a></li>
+      <li><a href="DisplayVisibility.html">Display, Visibility</a></li>
+      <li><a href="LeftRight.html">Left, Right, Top, Bottom Property</a></li>
+      <li><a href="Position.html">Position and Z-index</a></li>  
+      <li><a href="Outline.html">Outline, Offset</a></li>
+      <li><a href="CursorProperty.html">Cursor Property</a></li>
+      <li><a href="RoundedCorners.html">Rounded Corners</a></li>    
+    </ul>
+  </div>
+  <div class="medium-10 columns">
+    <h1 style="text-align:center;font-weight:bold;font-size:3em">Styling Table</h1>
+    <p>
+Table Tags:<br>
+<code>&lt;Th&gt;</code> tag is used to specify Header cell information. <br>
+<code>&lt;Thead&gt;</code> tag is used to specify Header part of a table. <br>
+<code>&lt;Tbody&gt;</code> tag is used to specify Body part of a table. <br>
+<code>&lt;Tfoot&gt;</code> tag is used to specify Footer part of a table. <br><br>
+border-collapse:collapse|separate;<br>
+tr:nth-child(2n){ background-color:pink; }<br>
+</p>
+  </div>
+</div>
+<hr>
+<!-- footer-->
+<div class="medium-12 columns" style="padding:0px;">
+<footer class="w3-container w3-padding-32 w3-theme w3-center w3-black">
+  <h4>Follow Us</h4>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Rss"><i class="fa fa-rss"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <h5>Developed by Akshay Jain & Anuj Sharma</h5>
+  <p>© Copyright 2015. All Rights Reserved.</p>           
+
+  <div style="position:relative;bottom:103px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal">Go To Top</span>   
+    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>                
+</footer>  
+</div>
+
+<!-- Initialize Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+
+</body>
+</html>

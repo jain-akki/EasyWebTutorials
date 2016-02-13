@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EasyWeb</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../Style/w3.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../Style/foundation.css" >
+  <script src="../js/jquery.min.js" ></script>
+  <script src="../js/foundation.min.js" ></script>
+  <script src="../js/modernizr.js" ></script>
+  <script>
+  $(document).ready(function(){
+  $(document).foundation(); 
+   });
+  </script>
+</head>
+
+<body id="myPage" style="height:1000px">
+
+<div>
+  <img src="../img/Logo.PNG" alt="EasyWeb Logo" style="height:100px;"/> 
+</div>
+
+<div class="sticky">
+  <nav class="top-bar" data-topbar data-options="is_hover: false">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="../index.html">EasyWeb</a></h1>
+    </li>
+    <!-- Collapsible Button on small screens: remove the .menu-icon class to get rid of icon. 
+    Remove the "Menu" text if you only want to show the icon -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <li><a href="../index.html">Home</a></li>
+      <li class="has-dropdown">
+        <a href="#">WebDesigning</a>
+        <ul class="dropdown">
+          <li><a href="../Html/MainHtmlPage.html">Html</a></li>
+          <li><a href="MainHtml5Page.html">Html5</a></li>
+          <li><a href="../Css/MainCssPage.html">Css</a></li>
+          <li><a href="../Css3/MainCss3Page.html">Css3</a></li>
+          <li><a href="../Javascript/MainJavascriptPage.html">Javascript</a></li>
+          <li><a href="#">Jquery</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+</div>
+
+<div>
+  <div class="medium-2 columns" style="background-color:#f1f1f1;">
+    <ul class="side-nav">
+      <li><a href="MainHtml5Page.html">Home</a></li>
+      <li><a href="DirectoryStructure.html">Directory Structure</a></li>
+      <li><a href="MetaTag.html">Meta Tag</a></li>
+      <li><a href="ImageMaps.html">Image Maps</a></li>
+      <li><a href="Doctype.html">The !DOCTYPE Declaration</a></li>    
+      <li><a href="AudioVideo.html">Audio and Video tag</a></li>
+      <li><a href="Marquee.html">Marquee Start/Stop</a></li>
+      <li><a href="ElementsRemoved.html">Elements Removed</a></li>
+      <li><a href="SemanticElements.html">Semantic Elements</a></li> 
+      <li><a href="NewElements.html">New Elements</a></li>
+      <li><a href="CreateElement.html">Create Element</a></li>
+      <li><a href="BrowserSupport.html">Browser Support</a></li>
+      <li><a href="BasicStructure.html">Basic Structure</a></li>
+      <li><a href="FormElements.html">HTML5 Form Element</a></li>    
+      <li><a href="Canvas.html">HTML5 Canvas</a></li>   
+    </ul>
+  </div>
+  <div class="medium-10 columns">
+    <h1 style="text-align:center;font-weight:bold;font-size:3em">HTML5 Form Elements</h1>
+    <p>
+<h3>HTML5 Label Element</h3>
+The label element defines a label for an input element. The label element does not render anything special for the user. However, it provides a usability improvement for mouse users, because if the user clicks on the text within the label element, it focus the control for which it is use.<br><br>
+
+<h3>HTML5 datalist Element</h3>
+The datalist element specifies a list of pre-defined options for an input element. Users will see a drop-down list of pre-defined options as they input data. The list attribute of the input element, must refer to the id attribute of the datalist element.<br>
+
+<h3>HTML5 Range Element, HTML5 Number Element</h3>
+The datalist element specifies a list of pre-defined options for an input element. Users will see a drop-down list of pre-defined options as they input data. The list attribute of the input element, must refer to the id attribute of the datalist element.<br>
+
+Attribute Description
+disabled  Specifies that an input field should be disabled
+max Specifies the maximum value for an input field
+maxlength Specifies the maximum number of character for an input field
+min Specifies the minimum value for an input field
+pattern Specifies a regular expression to check the input value against
+readonly  Specifies that an input field is read only (cannot be changed)
+required  Specifies that an input field is required (must be filled out)
+size  Specifies the width (in characters) of an input field
+step  Specifies the legal number intervals for an input field
+value Specifies the default value for an input field
+Exercise: 
+
+Input Type: date<br>
+<form>
+  Birthday:
+  <input type="date" name="bday">
+</form>
+You can add restrictions to the input:
+<form>
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+</form>
+
+Input Type: color
+<form>
+  Select your favorite color:
+  <input type="color" name="favcolor">
+</form>
+
+Input Type: month
+<form>
+  Birthday (month and year):
+  <input type="month" name="bdaymonth">
+</form>
+
+Input Type: week
+<form>
+  Select a week:
+  <input type="week" name="week_year">
+</form>
+
+Input Type: time
+<form>
+  Select a time:
+  <input type="time" name="usr_time">
+</form>
+
+Input Type: datetime-local
+<form>
+  Birthday (date and time):
+  <input type="datetime-local" name="bdaytime">
+</form>
+
+Input Type: email
+<form>
+  E-mail:
+  <input type="email" name="email">
+</form>
+
+Input Type: search
+<form>
+  Search Google:
+  <input type="search" name="googlesearch">
+</form>
+
+Input Type: url
+<form>
+  Add your homepage:
+  <input type="url" name="homepage">
+</form>
+<h3>HTML Form Attributes</h3>
+The Action Attribute<br>
+The action attribute defines the action to be performed when the form is submitted. The common way to submit a form to a server, is by using a submit button.<br>
+Note: If the action attribute is omitted, the action is set to the current page.<br>
+
+The Method Attribute<br>
+The method attribute specifies the HTTP method (GET or POST) to be used when submitting the forms.<br>
+When to Use GET?<br>
+You can use GET (the default method). If the form submission is without sensitive information you can use GET method, the form data will be visible in the page address.<br>
+When to Use POST?<br>
+You should use POST. If the form is updating data, or includes sensitive information like password. POST offers better security because the submitted data is not visible in the page address.<br>
+
+autocomplete - Specifies if the browser should autocomplete the form (default: on).<br>
+novalidate - Specifies that the browser should not validate the form. <Br>
+target - Specifies the target of the address in the action attribute (default: _self).<br>
+The formnovalidate Attribute - The formnovalidate attribute can be used with type="submit".<Br>
+The multiple Attribute - The multiple attribute works with the following input types: email, and file.<Br>
+The pattern Attribute -<br>
+
+            Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br>
+            
+The placeholder Attribute - The placeholder attribute specifies a hint that describes the expected value of an input field<br>
+The required Attribute - The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.</p>
+  </div>
+</div>
+<hr>
+<!-- footer-->
+<div class="medium-12 columns" style="padding:0px;">
+<footer class="w3-container w3-padding-32 w3-theme w3-center w3-black">
+  <h4>Follow Us</h4>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Rss"><i class="fa fa-rss"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <h5>Developed by Akshay Jain & Anuj Sharma</h5>
+  <p>© Copyright 2015. All Rights Reserved.</p>           
+
+  <div style="position:relative;bottom:103px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal">Go To Top</span>   
+    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>                
+</footer>  
+</div> 
+
+<!-- Initialize Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+
+</body>
+</html>

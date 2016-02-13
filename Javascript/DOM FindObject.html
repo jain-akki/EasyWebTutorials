@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Foundation Framework</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../Style/foundation.css" >
+    <script src="../js/jquery.min.js" ></script>
+    <script src="../js/foundation.min.js" ></script>
+    <script src="../js/modernizr.js" ></script>
+    <script>
+    $(document).ready(function(){
+		$(document).foundation();	
+	});
+    </script>
+</head>
+
+<body style="height:1000px">
+
+<div>
+  <h1>WebTutors Logo</h1> 
+</div>
+
+<div class="sticky">
+  <nav class="top-bar" data-topbar data-options="is_hover: false">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">WebTutors</a></h1>
+    </li>
+    <!-- Collapsible Button on small screens: remove the .menu-icon class to get rid of icon. 
+    Remove the "Menu" text if you only want to show the icon -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="has-dropdown">
+        <a href="#">WebDesigning</a>
+        <ul class="dropdown">
+          <li class="active"><a href="#">Html</a></li>
+          <li><a href="#">Html5</a></li>
+          <li><a href="#">Css</a></li>
+          <li><a href="#">Css3</a></li>
+          <li><a href="#">Javascript</a></li>
+          <li><a href="#">Jquery</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+</div>
+
+<div>
+  <div class="medium-2 columns" style="background-color:#f1f1f1;">
+    <ul class="side-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Define Javascript</a></li>
+      <li><a href="#">Comment</a></li>
+      <li><a href="#">JavaScript Operators</a></li>
+      <li><a href="#">Conditional Statement</a></li>    
+      <li><a href="#">Loops</a></li>
+      <li><a href="#">Popup Boxes</a></li>
+      <li><a href="#">Arrays</a></li>
+      <li><a href="#">JavaScript Events</a></li> 
+      <li><a href="#">Styling Elements</a></li>
+      <li><a href="#">External JavaScripts</a></li>
+      <li><a href="#">The NoScript Tag</a></li>
+      <li><a href="#">Change Backcolor</a></li>
+      <li><a href="#">SlideShow</a></li>    
+      <li><a href="#">String and String Methods</a></li>
+      <li><a href="#">Math Functions</a></li>
+      <li><a href="#">Date functions</a></li>   
+    </ul>
+  </div>
+  <div class="medium-10 columns">
+    <h1>HTML DOM Finding HTML Elements</h1>
+    <p>Finding HTML Objects
+ document.anchors Returns all <a> elements that have a name attribute
+ document.baseURI Returns the absolute base URI of the document
+ document.documentMode Returns the mode used by the browser
+ document.documentURI Returns the URI of the document
+ document.domain Returns the domain name of the document server
+ document.images Returns all <img> elements
+ document.links Returns all <area> and <a> elements that have a href attribute
+ document.URL Returns the complete URL of the document
+ document.embeds.length 
+ document.forms.length
+ document.images.length
+ document.links.length
+ document.title 
+
+ Example 1: Count Anchor tag 
+
+</p>
+  </div>
+</div>
+
+<!-- Initialize Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+
+</body>
+</html>
